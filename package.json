@@ -1,6 +1,6 @@
 {
   "name": "react-universal-calendar",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "universal calendar for react apps",
   "main": "build/index.js",
   "scripts": {
