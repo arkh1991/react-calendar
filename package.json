@@ -21,15 +21,13 @@
     "url": "https://github.com/arkh1991/react-calendar/issues"
   },
   "homepage": "https://github.com/arkh1991/react-calendar#readme",
-  "dependencies": {
-    "webpack": "^4.39.2"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "webpack": "^4.39.2",
     "styled-components": "^4.3.2",
-    "moment": "^2.24.0",
+    "moment": "*",
     "image-webpack-loader": "^5.0.0",
     "prop-types": "^15.7.2"
   },
@@ -45,6 +43,7 @@
     "styled-components": "^4.3.2",
     "image-webpack-loader": "^5.0.0",
     "prop-types": "^15.7.2",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "webpack": "^4.39.2"
   }
 }
