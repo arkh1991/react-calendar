@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import moment from "moment";
+import * as momentImported from "moment";
 import PropTypes from "prop-types";
 import {
     CalendarBaseDayOfWeekNameWrapper,
@@ -23,8 +23,8 @@ import {
 } from "./controls";
 
 const WEEK_LENGTH = 7;
-const shortDaysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
+const moment = momentImported;
 /**
  * Get next week (7 days) from start date.
  * @param date - start date.
@@ -70,10 +70,11 @@ const UniversalCalendar = (props) => {
 
     // only once
     useEffect(() => {
-        const monthStartMoment = moment(moment().date(1));
+
+        const monthStartMoment = moment(props.initDate.date(1));
         setCurrMonth(monthStartMoment);
         setDays(getCalendarDaysForMonth(monthStartMoment))
-    }, []);
+    }, [props.initDate]);
 
 
     const handleSwipeMonth = direction => {
@@ -167,7 +168,7 @@ UniversalCalendar.defaultProps = {
     dateAreaStyle: {},
     renderDayOfWeekName: dayOfWeekNum => (
         <CalendarBaseDayOfWeekNameWrapper>
-            {shortDaysOfWeek[dayOfWeekNum]}
+            {moment.weekdaysShort()[dayOfWeekNum]}
         </CalendarBaseDayOfWeekNameWrapper>
     ),
     cellStyle: {},
