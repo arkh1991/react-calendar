@@ -1,0 +1,50 @@
+{
+  "name": "react-universal-calendar",
+  "version": "1.0.0",
+  "description": "universal calendar for react apps",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkh1991/react-calendar.git"
+  },
+  "keywords": [
+    "react",
+    "calendar"
+  ],
+  "author": "arkh1991",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkh1991/react-calendar/issues"
+  },
+  "homepage": "https://github.com/arkh1991/react-calendar#readme",
+  "dependencies": {
+    "webpack": "^4.39.2"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.2",
+    "styled-components": "^4.3.2",
+    "moment": "^2.24.0",
+    "image-webpack-loader": "^5.0.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "file-loader": "^4.2.0",
+    "webpack-cli": "^3.3.7",
+    "styled-components": "^4.3.2",
+    "image-webpack-loader": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "moment": "^2.24.0"
+  }
+}
