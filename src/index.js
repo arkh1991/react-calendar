@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import moment from "moment";
 import PropTypes from "prop-types";
 import {
@@ -65,7 +65,7 @@ const getCalendarDaysForMonth = date => {
 };
 const UniversalCalendar = (props) => {
 
-    const [currMonth, setCurrMonth] = useState(moment());
+    const [currMonth, setCurrMonth] = useState(props.initDate);
     const [days, setDays] = useState([]);
 
     // only once
@@ -125,6 +125,7 @@ const UniversalCalendar = (props) => {
 }
 
 UniversalCalendar.propTypes = {
+    initDate: PropTypes.instanceOf(moment),
     renderHeader: PropTypes.func,
     renderSwitchMonth: PropTypes.func,
     dateAreaStyle: PropTypes.objectOf(
@@ -138,6 +139,7 @@ UniversalCalendar.propTypes = {
 };
 
 UniversalCalendar.defaultProps = {
+    initDate: moment(),
     renderHeader: () =>
         <CalendarHeaderContainer>
             <CalendarHeaderText>Calendar</CalendarHeaderText>

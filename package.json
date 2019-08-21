@@ -7,6 +7,7 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arkh1991/react-calendar.git"
@@ -45,5 +46,10 @@
     "prop-types": "^15.7.2",
     "moment": "^2.24.0",
     "webpack": "^4.39.2"
-  }
+  },
+  "files": [
+    "src/*",
+    "assets/*",
+    "build/*"
+  ]
 }
