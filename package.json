@@ -1,13 +1,12 @@
 {
   "name": "react-universal-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "universal calendar for react apps",
   "main": "build/index.js",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arkh1991/react-calendar.git"
